@@ -5,15 +5,7 @@ spring:
     name: provider
 
 management:
-    endpoints:
-        web:
-            exposure:
-                include: refresh,health,info,bus-refresh
-spring:
-    rabbitmq:
-        host: 192.168.5.180
-        port: 5672
-        username: admin
-        password: admin
-        virtualHost: /
-        publisherConfirms: true
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
